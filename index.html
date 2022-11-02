@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Title</title>
+</head>
+<body>
+<section class="wrapper">
+    <div class="box drop" >
+        <p>image's name</p>
+        <div class="innerBox" id="nameImg"></div>
+    </div>
+    <div class="box" id="ratio">
+        <label>Speed:</label>
+        <input type="number" name="rate" id="speed" min="1" max="5" placeholder= "1 - 5" oninput="resetNumberOfImgShowed()">
+        <button id="start" onclick="setSpeed()">Start</button>
+    </div>
+    <div class="box drop" >
+        <p>Tag</p>
+        <div class="innerBox" id="tag"></div>
+    </div>
+    <div  id="images">
+        <img id="image" class="image" src="./images/ready.jpg" alt="random images" draggable="true" aria-label="">
+        <img id="end" class="image" src="./images/end.jpg" alt="end image" draggable="false" aria-label="">
+        <p> Number of drop Items:<span id="counter">0</span></p>
+    </div>
+    <div class="box drop" >
+        <p>Image's Id</p>
+        <div class="innerBox" id="idImg"></div>
+    </div>
+    <div class="box" id="display"></div>
+    <div class="box drop" >
+        <p>dimension</p>
+        <div class="innerBox" id="dimension"></div>
+    </div>
+</section>
+<script src="main.js"></script>
+</body>
+</html>

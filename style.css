@@ -1,0 +1,107 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+
+
+.wrapper {
+    width: 80vw;
+    height: 90vh;
+    padding: 1rem;
+    background-color: white;
+    /*    grid style*/
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    gap: 5px;
+}
+
+.box {
+    border: 2px solid lightgray;
+    font-size: 1.6rem;
+}
+#end {
+    display:none;
+}
+
+#ratio , #display{
+    padding: 1rem;
+    width: 12rem;
+    height: 8rem;
+    /*grid*/
+    justify-self: center;
+    align-self: center;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#ratio label {
+    align-self: start;
+    font-size: 1.6rem;
+}
+button {
+    padding: .5rem 3rem;
+    border-radius: 8px;
+    background-color: lightskyblue;
+    border: lightskyblue;
+}
+
+#speed {
+    width: 100%;
+}
+#images {
+    grid-area: 2/1/3/4;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#images p {
+    font-size: 1.6rem;
+}
+img {
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    width:10rem;
+}
+.addImage {
+    width: 8vw;
+    height: 10vh;
+    border-radius: 0;
+}
+#image {
+    width: 10rem;
+}
+.innerBox {
+    display: grid;
+    grid-template: repeat(2,1fr)/repeat(3,1fr);
+    height: 50%;
+}
+.hi {
+    border:3px dashed green;
+}
+.box p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 2px dashed lightgray;
+}
+#counter {
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    color: white;
+}
+
